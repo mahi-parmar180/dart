@@ -1,0 +1,26 @@
+import 'dart:io';
+void swap(int a,int b)
+{
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  print("\n swapping is");
+  print("first number is:$a");
+  print("second number is:$b");
+}
+void dis(int a,int b)
+{
+
+  print("first number:$a");
+  print("Second number:$b");
+}
+void main()
+{
+  stdout.write("Enter Any Number first:");
+  int a=int.parse(stdin.readLineSync()!);
+  stdout.write("Enter Any Number Second:");
+  int b=int.parse(stdin.readLineSync()!);
+  dis(a,b);
+  swap(a,b);
+
+}
